@@ -21,7 +21,7 @@
 **Passos:**
 1. Não preencher Username  
 2. Não preencher senha  
-3. Clicar em "Sing In"  
+3. Clicar em "Sign In"  
 
 **Resultado esperado:** Sistema deve impedir login e exibir mensagem informando que os campos são obrigatórios. 
 
@@ -40,9 +40,10 @@
 2. Clicar em "Add to cart"
 3. Clicar no ícone do carrinho  
 
-**Resultado esperado:** Sistema deve redirecionar para a pagina de carrinho exibindo o produto adicionado
+**Resultado esperado:** Sistema deve redirecionar para a página de carrinho exibindo o produto adicionado
 
 **Resultado real:** Após clicar no ícone do carrinho, a aplicação permaneceu na página de produtos e exibiu apenas o indicador de carregamento, sem redirecionar para o carrinho.
+
 **Status:** Falhou
 
 
