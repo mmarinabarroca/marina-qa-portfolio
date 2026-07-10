@@ -5,7 +5,7 @@
 **Passos:**
 1. Inserir um Username inválido  
 2. Inserir senha qualquer  
-3. Clicar em "Sing In"  
+3. Clicar em "Sign In"  
 
 **Resultado esperado:** Sistema deve exibir mensagem de erro  
 
@@ -19,7 +19,7 @@
 **Pré-condição:** Página de login aberta  
 
 **Passos:**
-1. Não preencher email  
+1. Não preencher Username  
 2. Não preencher senha  
 3. Clicar em "Sing In"  
 
@@ -31,7 +31,7 @@
 
 
 
-## TC-003 – Acessar carrinho de compras a partir da página de produto
+## TC-003 – Acessar carrinho de compras a partir da página de produtos
 
 **Pré-condição:** Usuário está na página de produtos
 
@@ -42,8 +42,7 @@
 
 **Resultado esperado:** Sistema deve redirecionar para a pagina de carrinho exibindo o produto adicionado
 
-**Resultado real:** Sistema exibiu ícone de carregamento no topo da tela e não redirecionou para a página do carrinho
-
+**Resultado real:** Após clicar no ícone do carrinho, a aplicação permaneceu na página de produtos e exibiu apenas o indicador de carregamento, sem redirecionar para o carrinho.
 **Status:** Falhou
 
 
