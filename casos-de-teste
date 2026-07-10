@@ -1,53 +1,111 @@
-## TC-001 – Validar login com credenciais inválidas
+## TC-001 – Validar login com credenciais inválidas. 
 
-**Pré-condição:** Usuário está na página de login  
+**Pré-condição:** Usuário está na página de login.  
 
 **Passos:**
-1. Inserir um Username inválido  
-2. Inserir senha qualquer  
-3. Clicar em "Sign In"  
+1. Inserir um usuário inválido.  
+2. Inserir senha qualquer. 
+3. Clicar em Login.  
 
-**Resultado esperado:** Sistema deve exibir mensagem de erro  
+**Resultado esperado:** Sistema deve exibir mensagem de erro. 
 
-**Resultado real:** Sistema exibiu mensagem "Incorrect email or password."  
+**Resultado real:** Sistema exibiu a mensagem "Epic sadface: Username is required."  
+
+**Status:** Passou. 
+
+## TC-002 – Validar login com credenciais válidas. 
+
+**Pré-condição:** Usuário está na página de login. 
+
+**Passos:**
+1. Informar um usuário válido. 
+2. Informar uma senha válida.  
+3. Clicar em Login. 
+
+**Resultado esperado:** Sistema deve redirecionar para a página de produtos.
+ 
+**Resultado real:** Sistema redirecionou para a página de produtos. 
 
 **Status:** Passou
 
 
-## TC-002 – Validar login com campos vazios
+## TC-003 – Validar login com campos vazios. 
 
-**Pré-condição:** Página de login aberta  
+**Pré-condição:** Página de login aberta.  
 
 **Passos:**
-1. Não preencher Username  
-2. Não preencher senha  
-3. Clicar em "Sign In"  
+1. Não preencher usuário.  
+2. Não preencher senha.  
+3. Clicar em Login. 
 
 **Resultado esperado:** Sistema deve impedir login e exibir mensagem informando que os campos são obrigatórios. 
 
-**Resultado real:** Sistema exibiu mensagem "Incorrect email or password." e não efetuou o login.
+**Resultado real:** Sistema exibiu mensagem "Epic sadface: Username is required " e não efetuou o login.
 
 **Status:** Passou
 
+## TC-004 – Validar login com usuário vazio. 
 
+**Pré-condição:** Página de login aberta.  
 
-## TC-003 – Acessar carrinho de compras a partir da página de produtos
+**Passos:**
+1. Não preencher usuário.  
+2. Preencher senha.  
+3. Clicar em Login. 
 
-**Pré-condição:** Usuário está na página de produtos
+**Resultado esperado:** Sistema deve impedir login e exibir mensagem informando que o campo de usuário é obrigatório. 
+
+**Resultado real:** Sistema exibiu mensagem "Epic sadface: Username is required " e não efetuou o login.
+
+**Status:** Passou
+
+## TC-005 – Validar login com senha vazia. 
+
+**Pré-condição:** Página de login aberta.  
+
+**Passos:**
+1. Preencher usuário.  
+2. Não preencher senha.  
+3. Clicar em Login. 
+
+**Resultado esperado:** Sistema deve impedir login e exibir mensagem informando que a senha é obrigatória. 
+
+**Resultado real:** Sistema exibiu mensagem "Epic sadface: Password is required " e não efetuou o login.
+
+**Status:** Passou
+
+##PTC-006 – Validar login com usuário inválido. 
+
+**Pré-condição:** Página de login aberta.  
+
+**Passos:**
+1. Preencher usuário inexistente.  
+2. Preencher senha.  
+3. Clicar em Login. 
+
+**Resultado esperado:** Sistema deve impedir login e exibir mensagem informando que o usuário não existe. 
+
+**Resultado real:** Sistema exibiu mensagem "Epic sadface: Username and password do not match any user in this service" e não efetuou o login.
+
+**Status:** Passou
+
+## TC-007  – Acessar carrinho de compras a partir da página de um produto. 
+
+**Pré-condição:** Usuário está na página de um produto. 
 
 **Passos:**
 1. Acessar um dos produtos exibidos  
 2. Clicar em "Add to cart"
-3. Clicar no ícone do carrinho  
+3. Clicar no ícone do carrinho no canto superior da tela. 
 
-**Resultado esperado:** Sistema deve redirecionar para a página de carrinho exibindo o produto adicionado
+**Resultado esperado:** Sistema deve redirecionar para a página de carrinho imediatamente, exibindo o produto adicionado. 
 
-**Resultado real:** Após clicar no ícone do carrinho, a aplicação permaneceu na página de produtos e exibiu apenas o indicador de carregamento, sem redirecionar para o carrinho.
+**Resultado real:** Após clicar no ícone do carrinho, a aplicação redirecionou para a página de carrinho. 
 
-**Status:** Falhou
+**Status:** Passou. 
 
 
-## TC-004 – Remover produto do carrinho
+## TC-008 – Remover produto do carrinho
 
 **Pré-condição:** Usuário com no mínimo um produto no carrinho  
 
@@ -56,20 +114,20 @@
 2. Localizar o produto adicionado  
 3. Clicar no botão "Remove"  
 
-**Resultado esperado:** Produto deve ser removido do carrinho e não deve mais ser exibido  
+**Resultado esperado:** Produto deve ser removido do carrinho e não deve mais ser exibido.  
 
-**Resultado real:** Produto foi removido com sucesso  
+**Resultado real:** Produto foi removido com sucesso.  
 
-**Status:** Passou
+**Status:** Passou. 
 
 
 ## TC-005 – Validar checkout com campos obrigatórios vazios
 
-**Pré-condição:** Usuário com produto no carrinho e na página de checkout  
+**Pré-condição:** Usuário com produto no carrinho
 
 **Passos:**
 1. Clicar em "Checkout"  
-2. Não preencher os campos obrigatórios (Address, Last Name, Zip Code)  
+2. Não preencher os campos obrigatórios (First name, Last Name, Zip/Postal Code)  
 3. Clicar em "Continue"  
 
 **Resultado esperado:** Sistema deve exibir mensagem informando que os campos são obrigatórios e impedir a continuidade  
