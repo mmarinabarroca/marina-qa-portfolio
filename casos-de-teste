@@ -3,7 +3,7 @@
 **Pré-condição:** Usuário está na página de login  
 
 **Passos:**
-1. Inserir email inválido  
+1. Inserir um Username inválido  
 2. Inserir senha qualquer  
 3. Clicar em "Sing In"  
 
@@ -23,15 +23,16 @@
 2. Não preencher senha  
 3. Clicar em "Sing In"  
 
-**Resultado esperado:** Sistema deve impedir login e exibir mensagem informando que os campos sao obrigatorios. 
+**Resultado esperado:** Sistema deve impedir login e exibir mensagem informando que os campos são obrigatórios. 
 
-**Resultado real:** Sistema exibiu mensagem "Incorrect email or password." e nao efetuou o login.
+**Resultado real:** Sistema exibiu mensagem "Incorrect email or password." e não efetuou o login.
 
-**Status:** Falhou
+**Status:** Passou
 
 
 
-## TC-003 – Acessar carrinho de compras apartir da página de produto
+## TC-003 – Acessar carrinho de compras a partir da página de produto
+
 **Pré-condição:** Usuário está na página de produtos
 
 **Passos:**
@@ -41,14 +42,14 @@
 
 **Resultado esperado:** Sistema deve redirecionar para a pagina de carrinho exibindo o produto adicionado
 
-**Resultado real:** Sistema exibiu ícone de carregamento no topo da tela e nao redirecionou para a página do carrinho
+**Resultado real:** Sistema exibiu ícone de carregamento no topo da tela e não redirecionou para a página do carrinho
 
 **Status:** Falhou
 
 
 ## TC-004 – Remover produto do carrinho
 
-**Pré-condição:** Usuário com pelo menos um produto no carrinho  
+**Pré-condição:** Usuário com no mínimo um produto no carrinho  
 
 **Passos:**
 1. Acessar a página do carrinho  
