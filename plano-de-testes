@@ -1,33 +1,23 @@
-# Plano de Testes – SauceDemo
+# Plano de Testes – Swag Labs
 
 ## Objetivo
-Validar as principais funcionalidades da aplicação SauceDemo, garantindo que os fluxos críticos funcionem conforme o esperado.
+Validar as principais funcionalidades da aplicação Swag Labs por meio de testes funcionais e exploratórios.
 
 ## Escopo
 - Login
-- Carrinho de compras
+- Produtos
+- Carrinho
 - Checkout
-
-## Funcionalidades fora do escopo
-- Desempenho
-- Segurança
-- Compatibilidade entre navegadores
-- Testes de carga
 
 ## Tipos de teste
 - Testes funcionais
 - Testes exploratórios
 
-## Ambiente de teste
-- Sistema operacional: Windows
+## Ambiente
+- Aplicação: Swag Labs
 - Navegador: Google Chrome
-- Aplicação: SauceDemo
-
-## Critérios de aprovação
-- Os cenários críticos devem ser executados com sucesso.
-- Defeitos encontrados devem ser registrados em relatórios de bugs.
 
 ## Riscos
-- Falhas no login impedem o acesso às demais funcionalidades.
-- Falhas no carrinho impedem a continuidade da compra.
+- Falhas no login impedem o acesso ao sistema.
+- Falhas no carrinho impedem a compra.
 - Falhas no checkout impedem a finalização do pedido.
