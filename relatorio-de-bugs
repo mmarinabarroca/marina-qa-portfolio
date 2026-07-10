@@ -11,7 +11,7 @@
 Usuário na página de login  
 
 **Passos para reproduzir:**
-1. Não preencher o campo de email  
+1. Não preencher o campo de Username  
 2. Não preencher o campo de senha  
 3. Clicar em "Sign In"  
 
