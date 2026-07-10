@@ -1,17 +1,17 @@
-## TC-001 – Validar login com credenciais inválidas. 
+## TC-001 –  Validar login com usuário inválido. 
 
-**Pré-condição:** Usuário está na página de login.  
+**Pré-condição:** Página de login aberta.  
 
 **Passos:**
-1. Inserir um usuário inválido.  
-2. Inserir senha qualquer. 
-3. Clicar em Login.  
+1. Preencher usuário inexistente.  
+2. Preencher senha.  
+3. Clicar em Login. 
 
-**Resultado esperado:** Sistema deve exibir mensagem de erro. 
+**Resultado esperado:** Sistema deve impedir login e exibir mensagem informando que o usuário não existe. 
 
-**Resultado real:** Sistema exibiu a mensagem "Epic sadface: Username is required."  
+**Resultado real:** Sistema exibiu mensagem "Epic sadface: Username and password do not match any user in this service" e não efetuou o login.
 
-**Status:** Passou. 
+**Status:** Passou
 
 ## TC-002 – Validar login com credenciais válidas. 
 
@@ -74,17 +74,17 @@
 
 **Status:** Passou
 
-##PTC-006 – Validar login com usuário inválido. 
+## TC-006 – Validar login com senha inválida com usuário válido. 
 
 **Pré-condição:** Página de login aberta.  
 
 **Passos:**
-1. Preencher usuário inexistente.  
-2. Preencher senha.  
+1. Preencher usuário válido.  
+2. Preencher senha inválida.  
 3. Clicar em Login. 
 
-**Resultado esperado:** Sistema deve impedir login e exibir mensagem informando que o usuário não existe. 
-
+**Resultado esperado:** Sistema deve impedir login e exibir mensagem informando que a senha não corresponde a nenhum registro do banco de dados.
+ 
 **Resultado real:** Sistema exibiu mensagem "Epic sadface: Username and password do not match any user in this service" e não efetuou o login.
 
 **Status:** Passou
@@ -177,6 +177,21 @@ devem ser reordenados do maior preço pro menor.
 **Resultado esperado:** Sistema deve exibir mensagem informando que os campos são obrigatórios e impedir a continuidade  
 
 **Resultado real:** Sistema exibiu mensagem  "Error:First name is required" e não permitiu continuar  
+
+**Status:** Passou
+
+## TC-014 – Validar checkout com campo First name vazio. 
+
+**Pré-condição:** Usuário com produto no carrinho
+
+**Passos:**
+1. Clicar em "Checkout"  
+2. Preencher os campos obrigatórios Last Name e Zip/Postal Code edeixar vazio o Campo First Name. 
+3. Clicar em "Continue"  
+
+**Resultado esperado:** Sistema deve exibir mensagem informando que o campo é obrigatório e impedir a continuidade  
+
+**Resultado real:** Sistema exibiu mensagem  "Error: First Name is required" e não permitiu continuar  
 
 **Status:** Passou
 
