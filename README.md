@@ -1,19 +1,35 @@
-# Portfolio de QA - SauceDemo
+# Portfólio de QA - SauceDemo
 
 ## Objetivo
-Demonstrar habilidades em testes manuais, criação de casos de teste e reporte de bugs.
+Este projeto demonstra minhas habilidades em testes manuais, incluindo planejamento de testes, criação de casos de teste, execução dos cenários e documentação de bugs.
+
+## Aplicação
+SauceDemo
 
 ## Escopo
 - Login
+- Logout
+- Produtos
 - Carrinho
 - Checkout
 
-## Conteúdo
-- Plano de testes
-- Casos de teste
-- Relatórios de bugs
+## Artefatos
+- Plano de Testes
+- Casos de Teste
+- Relatórios de Bugs
 - Evidências
 
 ## Ferramentas
-- Navegador Chrome
+- Google Chrome
 - GitHub
+
+## Ambiente
+- Windows
+- Chrome
+- SauceDemo
+
+## Habilidades demonstradas
+- Testes funcionais
+- Casos de teste
+- Bug Report
+- Documentação
