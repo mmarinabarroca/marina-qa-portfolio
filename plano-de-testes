@@ -1,16 +1,33 @@
-## Plano de Testes – SauceDemo
+# Plano de Testes – SauceDemo
 
-### Objetivo
-Validar funcionalidades principais do sistema.
+## Objetivo
+Validar as principais funcionalidades da aplicação SauceDemo, garantindo que os fluxos críticos funcionem conforme o esperado.
 
-### Escopo
+## Escopo
 - Login
-- Carrinho
+- Carrinho de compras
 - Checkout
 
-### Tipos de teste
+## Funcionalidades fora do escopo
+- Desempenho
+- Segurança
+- Compatibilidade entre navegadores
+- Testes de carga
+
+## Tipos de teste
 - Testes funcionais
 - Testes exploratórios
 
-### Riscos
-- Falhas no login impedem uso do sistema
+## Ambiente de teste
+- Sistema operacional: Windows
+- Navegador: Google Chrome
+- Aplicação: SauceDemo
+
+## Critérios de aprovação
+- Os cenários críticos devem ser executados com sucesso.
+- Defeitos encontrados devem ser registrados em relatórios de bugs.
+
+## Riscos
+- Falhas no login impedem o acesso às demais funcionalidades.
+- Falhas no carrinho impedem a continuidade da compra.
+- Falhas no checkout impedem a finalização do pedido.
