@@ -1,62 +1,50 @@
-## BUG-001 – Mensagem incorreta ao submeter login com campos vazios
+# Exemplos de Bug Reports
+
+> **Observação:** Os relatórios abaixo são exemplos fictícios criados para demonstrar minha capacidade de documentar defeitos. Durante a execução dos testes manuais deste projeto, não foram encontrados bugs reproduzíveis na aplicação.
+
+## BUG-001 – Contador do carrinho não é atualizado após remover um produto
 
 **Severidade:** Média  
-**Prioridade:** Média  
-
-**Ambiente:**
-- Aplicação: SauceDemo  
-- Navegador: Chrome  
-
-**Pré-condição:**
-Usuário na página de login  
-
-**Passos para reproduzir:**
-1. Não preencher o campo de Username  
-2. Não preencher o campo de senha  
-3. Clicar em "Sign In"  
-
-**Resultado atual:**
-Sistema exibe a mensagem "Incorrect email or password."  
-
-**Resultado esperado:**
-Sistema deve exibir mensagem informando que os campos são obrigatórios  
-
-
-## BUG-002 – Comportamento inconsistente ao clicar repetidamente em "Add to cart"
-
-**Severidade:** Alta  
 **Prioridade:** Alta  
 
 **Ambiente:**
-- Aplicação: SauceDemo  
+- Aplicação: Swag Labs  
 - Navegador: Chrome  
 
 **Pré-condição:**
-Usuário autenticado na página de produtos  
+Usuário autenticado com um produto no carrinho
 
 **Passos para reproduzir:**
-1. Acessar a página de produtos  
-2. Clicar rapidamente várias vezes no botão "Add to cart"  
-3. Clicar no ícone do carrinho  
+1. Adicinar um produto aao carrinho
+2. Acessar o carrinho
+3. Clicar em **Remove**  
 
 **Resultado atual:**
-Sistema apresenta comportamento inconsistente, incluindo:
-- Seleção inesperada de elementos da interface (acionando comportamento de pesquisa do navegador)
-- Falha ao acessar o carrinho após a interação  
+O produto é removido da lista do carrinho, porém o contador de itens do carrinho continua exibindo **1**.
 
 **Resultado esperado:**
-Sistema deve processar os cliques corretamente, sem gerar efeitos colaterais na interface, mantendo o funcionamento normal do carrinho  
+Sistema deve remover o produto e o contador de itens do carrinho deve ser aatualizad, deixando de ser exibido no ícone qualquer numeração. 
 
-**Frequência:**
-Intermitente 
+## BUG-002 – Botão "Continue" permanece habilitado com campos obrigatórios vazios no checkout
 
-**Impacto:**
-Usuário pode perder controle da interface e não consegue acessar o carrinho, comprometendo o fluxo de compra.
+**Severidade:** Alta  
+**Prioridade:** Alta
 
+**Ambiente:**
+- Aplicação: Swag Labs
+- Navegador: Google Chrome
 
+**Pré-condição:**
+Usuário autenticado com pelo menos um produto no carrinho.
 
+**Passos para reproduzir:**
+1. Acessar o carrinho.
+2. Clicar em **Checkout**.
+3. Deixar todos os campos obrigatórios vazios.
+4. Clicar em **Continue**.
 
+**Resultado atual:**
+O sistema permite avançar para a próxima etapa do checkout sem validar os campos obrigatórios.
 
-
-
-
+**Resultado esperado:**
+O sistema deve impedir o avanço e exibir uma mensagem informando que os campos obrigatórios devem ser preenchidos.
