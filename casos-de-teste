@@ -83,7 +83,7 @@
 2. Preencher senha inválida.  
 3. Clicar em Login. 
 
-**Resultado esperado:** Sistema deve impedir login e exibir mensagem informando que a senha não corresponde a nenhum registro do banco de dados.
+**Resultado esperado:** Sistema deve impedir o login e exibir mensagem informando que as credenciais são inválidas
  
 **Resultado real:** Sistema exibiu mensagem "Epic sadface: Username and password do not match any user in this service" e não efetuou o login.
 
@@ -176,7 +176,7 @@ devem ser reordenados do maior preço pro menor.
 
 **Resultado esperado:** Sistema deve exibir mensagem informando que os campos são obrigatórios e impedir a continuidade  
 
-**Resultado real:** Sistema exibiu mensagem  "Error:First name is required" e não permitiu continuar  
+**Resultado real:** Sistema exibiu mensagem  "Error: First name is required" e não permitiu continuar  
 
 **Status:** Passou
 
@@ -195,7 +195,7 @@ devem ser reordenados do maior preço pro menor.
 
 **Status:** Passou
 
-## TC-013 – Validar checkout com campo Last Name vazio. 
+## TC-014 – Validar checkout com campo Last Name vazio. 
 
 **Pré-condição:** Usuário com produto no carrinho
 
