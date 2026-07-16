@@ -24,7 +24,6 @@ The following activities were performed:
 - Created a Test Plan
 - Designed and executed Test Cases
 - Documented Bug Reports
-- Collected Test Evidence
 - Applied functional and exploratory testing techniques
 
 ## Test Documentation
@@ -32,7 +31,6 @@ The following activities were performed:
 - Test Plan
 - Test Cases
 - Bug Reports
-- Test Evidence
 
 ## Testing Types
 
