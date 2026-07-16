@@ -16,8 +16,6 @@ The system displayed the message "Epic sadface: Username and password do not mat
 
 Status: Passed.
 
----
-
 TC-002 – Validate login with valid credentials
 
 Preconditions: User is on the login page.
@@ -35,8 +33,6 @@ Actual Result:
 The system redirected the user to the products page.
 
 Status: Passed.
-
----
 
 TC-003 – Validate login with empty fields
 
@@ -56,8 +52,6 @@ The system displayed the message "Epic sadface: Username is required" and login 
 
 Status: Passed.
 
----
-
 TC-004 – Validate login with empty username
 
 Preconditions: Login page is open.
@@ -75,8 +69,6 @@ Actual Result:
 The system displayed the message "Epic sadface: Username is required" and login was not performed.
 
 Status: Passed.
-
----
 
 TC-005 – Validate login with empty password
 
@@ -96,8 +88,6 @@ The system displayed the message "Epic sadface: Password is required" and login 
 
 Status: Passed.
 
----
-
 TC-006 – Validate login with invalid password and valid username
 
 Preconditions: Login page is open.
@@ -115,8 +105,6 @@ Actual Result:
 The system displayed the message "Epic sadface: Username and password do not match any user in this service" and login was not performed.
 
 Status: Passed.
-
----
 
 TC-007 – Access shopping cart after adding a product
 
@@ -136,8 +124,6 @@ The system redirected the user to the shopping cart page and displayed the added
 
 Status: Passed.
 
----
-
 TC-008 – Add product to cart
 
 Preconditions: User is on the products page.
@@ -155,8 +141,6 @@ The product was successfully added to the cart.
 
 Status: Passed.
 
----
-
 TC-009 – Remove product from cart
 
 Preconditions: User has at least one product in the cart.
@@ -172,5 +156,150 @@ The product should be removed from the cart and should no longer be displayed.
 
 Actual Result:
 The product was successfully removed.
+
+Status: Passed. 
+
+TC-010 – Validate product sorting by lowest price
+
+Preconditions: User is on the products page.
+
+Steps:
+
+1. Locate the product sorting dropdown.
+2. Click on the sorting dropdown.
+3. Select the option "Price (low to high)".
+
+Expected Result:
+All products should be reordered from the lowest price to the highest price.
+
+Actual Result:
+The products were displayed in ascending price order.
+
+Status: Passed.
+
+TC-011 – Validate product sorting by highest price
+
+Preconditions: User is on the products page.
+
+Steps:
+
+1. Locate the product sorting dropdown.
+2. Click on the sorting dropdown.
+3. Select the option "Price (high to low)".
+
+Expected Result:
+All products should be reordered from the highest price to the lowest price.
+
+Actual Result:
+The products were displayed in descending price order.
+
+Status: Passed.
+
+TC-012 – Validate checkout with empty required fields
+
+Preconditions: User has a product in the shopping cart.
+
+Steps:
+
+1. Click the "Checkout" button.
+2. Leave all required fields empty (First Name, Last Name, and Zip/Postal Code).
+3. Click the "Continue" button.
+
+Expected Result:
+The system should display a message informing that the required fields must be filled and prevent the user from continuing.
+
+Actual Result:
+The system displayed the message "Error: First Name is required" and did not allow the user to continue.
+
+Status: Passed.
+
+TC-013 – Validate checkout with empty First Name field
+
+Preconditions: User has a product in the shopping cart.
+
+Steps:
+
+1. Click the "Checkout" button.
+2. Fill in the Last Name and Zip/Postal Code fields and leave the First Name field empty.
+3. Click the "Continue" button.
+
+Expected Result:
+The system should display a message informing that the field is required and prevent the user from continuing.
+
+Actual Result:
+The system displayed the message "Error: First Name is required" and did not allow the user to continue.
+
+Status: Passed.
+
+TC-014 – Validate checkout with empty Last Name field
+
+Preconditions: User has a product in the shopping cart.
+
+Steps:
+
+1. Click the "Checkout" button.
+2. Fill in the First Name and Zip/Postal Code fields and leave the Last Name field empty.
+3. Click the "Continue" button.
+
+Expected Result:
+The system should display a message informing that the field is required and prevent the user from continuing.
+
+Actual Result:
+The system displayed the message "Error: Last Name is required" and did not allow the user to continue.
+
+Status: Passed.
+
+TC-015 – Validate checkout with empty Zip/Postal Code field
+
+Preconditions: User has a product in the shopping cart.
+
+Steps:
+
+1. Click the "Checkout" button.
+2. Fill in the First Name and Last Name fields and leave the Zip/Postal Code field empty.
+3. Click the "Continue" button.
+
+Expected Result:
+The system should display a message informing that the field is required and prevent the user from continuing.
+
+Actual Result:
+The system displayed the message "Error: Postal Code is required" and did not allow the user to continue.
+
+Status: Passed.
+
+TC-016 – Validate successful checkout completion
+
+Preconditions: User has a product in the shopping cart.
+
+Steps:
+
+1. Click the "Checkout" button.
+2. Fill in the required fields (First Name, Last Name, and Zip/Postal Code) with valid information.
+3. Click the "Continue" button.
+
+Expected Result:
+The system should display an order summary page containing product information (name, description, and price), payment information, shipping information, and the total purchase amount.
+
+Actual Result:
+The system displayed the summary page with all expected information.
+
+Status: Passed.
+
+TC-017 – Validate order completion
+
+Preconditions: User has a product in the shopping cart.
+
+Steps:
+
+1. Click the "Checkout" button.
+2. Fill in the required fields with valid information.
+3. Click the "Continue" button.
+4. Click the "Finish" button.
+
+Expected Result:
+The system should display a page informing that the order was completed successfully, along with the option to generate a PDF containing the order information.
+
+Actual Result:
+The system displayed a message informing the order completion and provided the option to generate a PDF with the order information.
 
 Status: Passed.
