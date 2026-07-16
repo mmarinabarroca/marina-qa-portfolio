@@ -1,0 +1,176 @@
+TC-001 – Validate login with invalid username
+
+Preconditions: Login page is open.
+
+Steps:
+
+1. Enter an invalid username.
+2. Enter the password.
+3. Click the "Login" button.
+
+Expected Result:
+The system should prevent login and display a message informing that the credentials are invalid.
+
+Actual Result:
+The system displayed the message "Epic sadface: Username and password do not match any user in this service" and login was not performed.
+
+Status: Passed.
+
+---
+
+TC-002 – Validate login with valid credentials
+
+Preconditions: User is on the login page.
+
+Steps:
+
+1. Enter a valid username.
+2. Enter a valid password.
+3. Click the "Login" button.
+
+Expected Result:
+The system should redirect the user to the products page.
+
+Actual Result:
+The system redirected the user to the products page.
+
+Status: Passed.
+
+---
+
+TC-003 – Validate login with empty fields
+
+Preconditions: Login page is open.
+
+Steps:
+
+1. Leave the username field empty.
+2. Leave the password field empty.
+3. Click the "Login" button.
+
+Expected Result:
+The system should prevent login and display a message informing that the required fields must be filled.
+
+Actual Result:
+The system displayed the message "Epic sadface: Username is required" and login was not performed.
+
+Status: Passed.
+
+---
+
+TC-004 – Validate login with empty username
+
+Preconditions: Login page is open.
+
+Steps:
+
+1. Leave the username field empty.
+2. Enter a valid password.
+3. Click the "Login" button.
+
+Expected Result:
+The system should prevent login and display a message informing that the username field is required.
+
+Actual Result:
+The system displayed the message "Epic sadface: Username is required" and login was not performed.
+
+Status: Passed.
+
+---
+
+TC-005 – Validate login with empty password
+
+Preconditions: Login page is open.
+
+Steps:
+
+1. Enter a valid username.
+2. Leave the password field empty.
+3. Click the "Login" button.
+
+Expected Result:
+The system should prevent login and display a message informing that the password field is required.
+
+Actual Result:
+The system displayed the message "Epic sadface: Password is required" and login was not performed.
+
+Status: Passed.
+
+---
+
+TC-006 – Validate login with invalid password and valid username
+
+Preconditions: Login page is open.
+
+Steps:
+
+1. Enter a valid username.
+2. Enter an invalid password.
+3. Click the "Login" button.
+
+Expected Result:
+The system should prevent login and display a message informing that the credentials are invalid.
+
+Actual Result:
+The system displayed the message "Epic sadface: Username and password do not match any user in this service" and login was not performed.
+
+Status: Passed.
+
+---
+
+TC-007 – Access shopping cart after adding a product
+
+Preconditions: User is on the products page.
+
+Steps:
+
+1. Select a product.
+2. Click the "Add to cart" button.
+3. Click the shopping cart icon at the top of the page.
+
+Expected Result:
+The system should redirect the user to the shopping cart page and display the added product.
+
+Actual Result:
+The system redirected the user to the shopping cart page and displayed the added product.
+
+Status: Passed.
+
+---
+
+TC-008 – Add product to cart
+
+Preconditions: User is on the products page.
+
+Steps:
+
+1. Select a product.
+2. Click the "Add to cart" button.
+
+Expected Result:
+The product should be added to the cart, the button should change from "Add to cart" to "Remove", and the cart icon should display the number of added products.
+
+Actual Result:
+The product was successfully added to the cart.
+
+Status: Passed.
+
+---
+
+TC-009 – Remove product from cart
+
+Preconditions: User has at least one product in the cart.
+
+Steps:
+
+1. Access the shopping cart page.
+2. Locate the added product.
+3. Click the "Remove" button.
+
+Expected Result:
+The product should be removed from the cart and should no longer be displayed.
+
+Actual Result:
+The product was successfully removed.
+
+Status: Passed.
