@@ -1,4 +1,4 @@
-# Portfólio de QA – Swag Labs
+ # Portfólio de QA – Swag Labs
 
 ## Objetivo
 
@@ -24,7 +24,6 @@ As seguintes atividades foram realizadas:
 - Criação de um Plano de Testes
 - Elaboração e execução de Casos de Teste
 - Documentação de Relatórios de Bugs
-- Coleta de Evidências de Teste
 - Aplicação de técnicas de testes funcionais e exploratórios
 
 ## Documentação de Testes
@@ -32,7 +31,6 @@ As seguintes atividades foram realizadas:
 - Plano de Testes
 - Casos de Teste
 - Relatórios de Bugs
-- Evidências de Teste
 
 ## Tipos de Teste
 
