@@ -1,10 +1,10 @@
 Test Plan – Swag Labs
 
-Objective
+##Objective
 
 Validate the main functionalities of the Swag Labs application through functional and exploratory testing, ensuring that the main user flows work as expected.
 
-Scope
+##Scope
 
 The following features will be tested:
 
