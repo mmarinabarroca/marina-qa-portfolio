@@ -1,0 +1,62 @@
+Bug Reports Examples – Swag Labs
+
+«Note: The bug reports below are fictional examples created to demonstrate my ability to document software defects. During the manual testing execution of this project, no reproducible bugs were found in the application.»
+
+BUG-001 – Cart counter is not updated after removing a product
+
+Severity: Medium
+Priority: High
+Status: Example
+
+Environment
+
+- Application: Swag Labs (SauceDemo)
+- Browser: Google Chrome
+
+Preconditions
+
+User is authenticated and has a product added to the shopping cart.
+
+Steps to Reproduce
+
+1. Add a product to the shopping cart.
+2. Access the shopping cart page.
+3. Click the "Remove" button.
+
+Actual Result
+
+The product is removed from the shopping cart list, but the cart counter continues displaying the number 1.
+
+Expected Result
+
+The system should remove the product and update the cart counter, removing the number displayed on the cart icon when there are no remaining products.
+
+BUG-002 – Continue button remains enabled with empty required checkout fields
+
+Severity: High
+Priority: High
+Status: Example
+
+Environment
+
+- Application: Swag Labs (SauceDemo)
+- Browser: Google Chrome
+
+Preconditions
+
+User is authenticated and has at least one product in the shopping cart.
+
+Steps to Reproduce
+
+1. Access the shopping cart.
+2. Click the "Checkout" button.
+3. Leave all required fields empty.
+4. Click the "Continue" button.
+
+Actual Result
+
+The system allows the user to proceed to the next checkout step without validating the required fields.
+
+Expected Result
+
+The system should prevent the user from continuing and display a message informing that the required fields must be completed.
